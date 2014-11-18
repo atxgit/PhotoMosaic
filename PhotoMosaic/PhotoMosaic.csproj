@@ -20,6 +20,10 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -167,12 +171,27 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\BlahController.cs" />
+    <Compile Include="Controllers\API\PhotoSetController.cs" />
+    <Compile Include="Controllers\API\PhotoTagController.cs" />
+    <Compile Include="Controllers\API\PhotoTagSetController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DataAccess\DataAccessFactory.cs" />
+    <Compile Include="DataAccess\DataAccessMockRepository.cs" />
+    <Compile Include="DataAccess\IPhotoSetDataAdapter.cs" />
+    <Compile Include="DataAccess\IPhotoTagDataAdapter.cs" />
+    <Compile Include="DataAccess\PhotoSetDataAdapterSQL.cs" />
+    <Compile Include="DataAccess\PhotoSetDataAdapterMock.cs" />
+    <Compile Include="DataAccess\PhotoTagDataAdapterMock.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\AuthCredentialsModels.cs" />
+    <Compile Include="Models\PagerPageModels.cs" />
+    <Compile Include="Models\PhotoModels.cs" />
+    <Compile Include="Models\SearchCriteriaModels.cs" />
+    <Compile Include="Models\PhotoTagModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

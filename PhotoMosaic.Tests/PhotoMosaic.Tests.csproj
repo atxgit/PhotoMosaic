@@ -101,8 +101,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\API\PhotoTagControllerTests.cs" />
+    <Compile Include="DataAccess_Mock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="Controllers\API\PhotoSetControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

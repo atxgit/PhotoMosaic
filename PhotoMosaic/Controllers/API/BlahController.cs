@@ -12,7 +12,7 @@ namespace PhotoMosaic.Controllers.APIs
         // GET api/blah
         public IEnumerable<string> Get()
         {
-            return new string[] { "blah", "blah blah", "b3"};
+            return new string[] { "blah", "blah blah" };
         }
 
         // GET api/blah/5
