@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace PhotoMosaic.Models
@@ -9,19 +10,16 @@ namespace PhotoMosaic.Models
 
     public class PagerPageModel
     {
-        [Required]
-        [Display(Name = "Page Size")]
+        [DataMember]
         public int Size { get; set; }
 
         /// <summary>
         /// NOTE: First Page is Page One
         /// </summary>
-        [Required]
-        [Display(Name = "Page Index")]
+        [DataMember]
         public int Index { get; set; }
 
-        [Required]
-        [Display(Name = "Total Page Count")]
+        [DataMember]
         public int TotalPageCount { get; set; }
 
         public static int FIRST_PAGE_INDEX = 1;

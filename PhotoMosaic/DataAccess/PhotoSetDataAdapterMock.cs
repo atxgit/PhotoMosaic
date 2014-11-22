@@ -14,6 +14,8 @@ namespace PhotoMosaic.DataAccess
             return new PhotoModel()
             {
                 Id = id, // random ID
+                Group = "C and D Photos",
+                GroupColor = "#ffaa22",
                 Url = "https://d2k1ftgv7pobq7.cloudfront.net/images/backgrounds/ocean/large.jpg"
             };
         }
@@ -27,12 +29,24 @@ namespace PhotoMosaic.DataAccess
             set.Page = page;
             set.Photos = new List<PhotoModel>();
 
+            int lastGroupI = 0;
+            int rndI = rnd.Next(1, 10);
+            string color = colors[0];
+
             for (int i = PagerPageModel.FIRST_PAGE_INDEX; i <= page.Size; i++)
             {
+                if (i > lastGroupI + rndI)
+                {
+                    color = colors[i%colors.Count];
+                    rndI = rnd.Next(1, 10);
+                    lastGroupI = i;
+                }
 
                 set.Photos.Add(new PhotoModel()
                             {
-                                Id = i+1000, // random ID
+                                Id = i + 1000, // random ID
+                                Group = color,
+                                GroupColor = color,
                                 Url = "https://d2k1ftgv7pobq7.cloudfront.net/images/backgrounds/ocean/large.jpg"
                             }
                     );
@@ -41,8 +55,8 @@ namespace PhotoMosaic.DataAccess
             return set;
         }
 
-
-
+        private List<string> colors = new List<string>() { "#ffaacc", "#ccaa44", "#bbaaff", "#ff33cc", "#aa3322" };
+        private Random rnd = new Random();
 
     }
 }

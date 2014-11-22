@@ -25,11 +25,15 @@ namespace PhotoMosaic.Controllers.API
             return _dataAdapter.GetPhotoSet( criteria, page, auth);
         }
 
-        //// GET api/imageset/5
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        // GET api/imageset/5
+        public PhotoSetModel Get()
+        {
+            var criteria = new SearchCriteriaModel() { SearchString = "" };
+            var page = new PagerPageModel() { Index = 1, Size = 10 };
+            var auth = new AuthCredentialsModel() { Email = "", Token = "" };
+
+            return _dataAdapter.GetPhotoSet(criteria, page, auth);
+        }
 
     }
 }

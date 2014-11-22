@@ -96,6 +96,6 @@ C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\bin\DotNetOpenAut
 C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\bin\DotNetOpenAuth.OAuth.xml
 C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\bin\DotNetOpenAuth.OpenId.xml
 C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\obj\Debug\PhotoMosaic.csprojResolveAssemblyReference.cache
 C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\obj\Debug\PhotoMosaic.dll
 C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\obj\Debug\PhotoMosaic.pdb
+C:\JohnDHill\Development GitHub\PhotoMosaic-master\PhotoMosaic\obj\Debug\PhotoMosaic.csprojResolveAssemblyReference.cache

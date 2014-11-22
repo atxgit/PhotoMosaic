@@ -1,0 +1,282 @@
+﻿
+        body
+        {
+            background-color: #000;
+            color: #FFF;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #modal-background
+        {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #777;
+            opacity: 0.5;
+            -webkit-opacity: 0.5;
+            -moz-opacity: .5;
+            filter: alpha(opacity=50);
+            z-index: 1000;
+        }
+        
+        #modal-content
+        {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 1000;
+            display: none;
+        }
+        
+        #modal-background.active, #modal-content.active
+        {
+            display: block;
+        }
+        
+        #modal-image-div
+        {
+            position: relative;
+            border: 3px solid white;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 10px;
+            xxmax-width: 240px;
+            xxmax-height: 200px;
+        }
+        
+        #modal-image
+        {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        #modal-image-close
+        {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+        
+        #modal-image-next
+        {
+            position: absolute;
+            right: 4px;
+            top: 45%;
+        }
+        
+        #modal-image-back
+        {
+            position: absolute;
+            left: 4px;
+            top: 45%;
+        }
+        
+        #pmContent
+        {
+            margin: auto;
+        }
+        
+        #pmImagelist
+        {
+            overflow: hidden;
+        }
+        
+        #HeaderSearchUsersDiv
+        {
+            text-align:right;
+        }
+        
+        #HeaderSearchUsersDiv ul
+        {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+        }
+        #HeaderSearchUsersDiv ul li
+        {
+            float: right;
+            background-color: #3b3b3b;
+            height: 26px;
+            margin-right: 4px;
+            border-bottom-right-radius: 3px;
+            -moz-border-radius-bottomright: 3px;
+            border-top-right-radius: 3px;
+            -moz-border-radius-topright: 3px;
+        }
+        #HeaderSearchUsersDiv ul li div
+        {
+            font: 14px "Arial";
+            display:inline-block;
+            vertical-align:middle;
+        }
+        .HSUDstart
+        {
+        	height:26px;
+        	width:12px;
+            content: url('images/tagleftedge.png');
+            background-image: url('images/tagleftedge.png');
+        }
+        .HSUDend
+        {
+        	height:26px;
+        	width:12px;
+        	margin:0 2px 0 7px;
+            content: url('images/SmallX.png');          
+            background-image: url('images/SmallX.png');            
+        }        
+        
+        #pmImagelist ul
+        {
+            list-style: none;
+            margin: 1px;
+            padding: 0px;
+            display: inline-block;
+            overflow: hidden;
+            float: left;
+            position: relative;
+        }
+        
+        #pmImagelist ul li
+        {
+            float: left;
+            margin-right: 2px;
+        }
+        
+        #pmImagelist ul li.last
+        {
+            margin-right: 0px;
+        }
+        
+        #pmImagelist ul li div
+        {
+            border-top-left-radius: 3px;
+            -moz-border-radius-topleft: 3px;
+            font: bold 14px "Arial";
+            color: #fff;
+            width: 100%;
+            position: relative;
+            height: 18px;
+            padding-left: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: absolute;
+        }
+        
+        #pmImagelist ul li img
+        {
+            margin-top: 18px;
+            border: 0px;
+        }
+
+        /*dynamic sizes*/
+
+        
+        .pmImagelistClearDiv
+        {
+            border: 0px;
+        }
+        
+        #HeaderSearchDiv
+        {
+            width: 100%;
+            display: inline-block;
+            position: relative;
+        }
+        
+        #HeaderSearchForm
+        {
+            border: 1px solid #3b3b3b;
+            background-color: #3b3b3b;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            display: inline-block;
+            float: right;
+            width: 155px;
+            margin-bottom: 4px;
+            margin-right: 1px;
+        }
+        
+        #HeaderSearchForm input
+        {
+            background-color: #3b3b3b;
+            border: 0;
+            height: 20px;
+            width: 120px;
+            color: #fff;
+            display: inline-block;
+            margin: 0;
+            margin-top: 2px;
+            margin-left: 2px;
+            padding: 1px 1px 1px 4px;
+            float: left;
+        }
+        
+        #HeaderSearchForm button
+        {
+            background-color: #3b3b3b;
+            border: 0;
+            margin: 0;
+            border-left: 0;
+            cursor: pointer;
+            color: #fff;
+            display: inline-block;
+            float: right;
+            background: url('images/search.png') no-repeat scroll 0px 1px;
+            width: 24px;
+            height: 24px;
+            overflow: hidden;
+        }
+        
+        #HeaderSearchResults
+        {
+            width: 200px;
+            position: absolute;
+            background: #3b3b3b;
+            right: 8px;
+            top: 27px;
+            z-index: 2;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            display: none;
+        }
+        
+        #HeaderSearchResults.active
+        {
+            display: block;
+        }
+        
+        #HeaderSearchResults ul
+        {
+            list-style: none;
+            margin: 1px;
+            padding: 0px;
+            overflow: hidden;
+            padding: 2px;
+        }
+        
+        #HeaderSearchResults ul li
+        {
+            margin: 1px 0px 1px 0px;
+            padding-left: 2px;
+        }
+        
+        #HeaderSearchResults ul li:hover
+        {
+            background-color: #4b4b4b;
+            cursor: pointer;
+        }
+    
+
+

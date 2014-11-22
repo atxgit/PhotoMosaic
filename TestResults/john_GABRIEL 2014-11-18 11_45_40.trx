@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="98b726af-28dd-45ec-a0f6-158b221c024a" name="john@GABRIEL 2014-11-18 11:45:40" runUser="HILLBOX\john" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="df64fc32-1f8b-4272-b25d-3b6b135f75b3">
+    <Deployment runDeploymentRoot="john_GABRIEL 2014-11-18 11_45_40">
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+      <DeploymentItem filename="D:\WWW\Hillbox\PhotoMosaic\PhotoMosaic\PhotoMosaic\bin\PhotoMosaic.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-11-18T11:45:40.1821986-06:00" queuing="2014-11-18T11:45:46.0623072-06:00" start="2014-11-18T11:45:46.2556740-06:00" finish="2014-11-18T11:45:47.0057028-06:00" />
+  <ResultSummary outcome="Warning">
+    <Counters total="6" executed="6" passed="6" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="GABRIEL" outcome="Warning" timestamp="2014-11-18T11:45:45.7947188-06:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'log4net' directly or indirectly referenced by the test container 'd:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll' was not found.</Text>
+      </RunInfo>
+      <RunInfo computerName="GABRIEL" outcome="Warning" timestamp="2014-11-18T11:45:45.7947188-06:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'Org.Mentalis.Security.Cryptography' directly or indirectly referenced by the test container 'd:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll' was not found.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PhotoTagDataAdapter_PhotoTagSet_ShouldReturnData" storage="d:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll" id="ee4c4d80-3f04-1173-03d1-08b6b2fc5494">
+      <Execution id="ed35cc5d-0c69-46bc-9b02-761db51d0d71" />
+      <TestMethod codeBase="D:/WWW/Hillbox/PhotoMosaic/PhotoMosaic/PhotoMosaic.Tests/bin/Debug/PhotoMosaic.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PhotoMosaic.Tests.DataAccess_Mock, PhotoMosaic.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PhotoTagDataAdapter_PhotoTagSet_ShouldReturnData" />
+    </UnitTest>
+    <UnitTest name="PhotoTagDataAdapter_PhotoTag_ShouldReturnData" storage="d:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll" id="090f0ebb-6a5c-6817-38ea-be75d3a0ef33">
+      <Execution id="98fe8134-7095-40db-bda5-a70f405a2b96" />
+      <TestMethod codeBase="D:/WWW/Hillbox/PhotoMosaic/PhotoMosaic/PhotoMosaic.Tests/bin/Debug/PhotoMosaic.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PhotoMosaic.Tests.DataAccess_Mock, PhotoMosaic.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PhotoTagDataAdapter_PhotoTag_ShouldReturnData" />
+    </UnitTest>
+    <UnitTest name="PhotoSetDataAdapter_Photo_ShouldReturnData" storage="d:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll" id="915f4dc9-b169-aca0-4c7f-9198c5a766a8">
+      <Execution id="4d43761e-3b49-43c0-9a56-85741ec39579" />
+      <TestMethod codeBase="D:/WWW/Hillbox/PhotoMosaic/PhotoMosaic/PhotoMosaic.Tests/bin/Debug/PhotoMosaic.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PhotoMosaic.Tests.DataAccess_Mock, PhotoMosaic.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PhotoSetDataAdapter_Photo_ShouldReturnData" />
+    </UnitTest>
+    <UnitTest name="PhotoSetDataAdapter_PhotoSet_ShouldReturnData" storage="d:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll" id="8b920b89-0817-2a92-5670-313881374707">
+      <Execution id="2bc95e67-0e8e-4d8c-ae0a-a043f5ff8c2d" />
+      <TestMethod codeBase="D:/WWW/Hillbox/PhotoMosaic/PhotoMosaic/PhotoMosaic.Tests/bin/Debug/PhotoMosaic.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PhotoMosaic.Tests.DataAccess_Mock, PhotoMosaic.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PhotoSetDataAdapter_PhotoSet_ShouldReturnData" />
+    </UnitTest>
+    <UnitTest name="PhotoTagDataAdapter_PhotoTag_ShouldUpdatePhotoTag" storage="d:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll" id="5a4d297e-6e09-98a3-360d-90e5a86a6726">
+      <Execution id="ded16144-1e03-4df5-9b2b-3d7667b48d89" />
+      <TestMethod codeBase="D:/WWW/Hillbox/PhotoMosaic/PhotoMosaic/PhotoMosaic.Tests/bin/Debug/PhotoMosaic.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PhotoMosaic.Tests.DataAccess_Mock, PhotoMosaic.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PhotoTagDataAdapter_PhotoTag_ShouldUpdatePhotoTag" />
+    </UnitTest>
+    <UnitTest name="PhotoTagDataAdapter_PhotoTag_ShouldAddTagsToPhotos" storage="d:\www\hillbox\photomosaic\photomosaic\photomosaic.tests\bin\debug\photomosaic.tests.dll" id="008f21b4-eca2-1ffe-0681-e945031830ff">
+      <Execution id="4f95c32d-5404-4a1b-a44b-88332c968f24" />
+      <TestMethod codeBase="D:/WWW/Hillbox/PhotoMosaic/PhotoMosaic/PhotoMosaic.Tests/bin/Debug/PhotoMosaic.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PhotoMosaic.Tests.DataAccess_Mock, PhotoMosaic.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PhotoTagDataAdapter_PhotoTag_ShouldAddTagsToPhotos" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="008f21b4-eca2-1ffe-0681-e945031830ff" executionId="4f95c32d-5404-4a1b-a44b-88332c968f24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="090f0ebb-6a5c-6817-38ea-be75d3a0ef33" executionId="98fe8134-7095-40db-bda5-a70f405a2b96" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a4d297e-6e09-98a3-360d-90e5a86a6726" executionId="ded16144-1e03-4df5-9b2b-3d7667b48d89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b920b89-0817-2a92-5670-313881374707" executionId="2bc95e67-0e8e-4d8c-ae0a-a043f5ff8c2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="915f4dc9-b169-aca0-4c7f-9198c5a766a8" executionId="4d43761e-3b49-43c0-9a56-85741ec39579" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee4c4d80-3f04-1173-03d1-08b6b2fc5494" executionId="ed35cc5d-0c69-46bc-9b02-761db51d0d71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4f95c32d-5404-4a1b-a44b-88332c968f24" testId="008f21b4-eca2-1ffe-0681-e945031830ff" testName="PhotoTagDataAdapter_PhotoTag_ShouldAddTagsToPhotos" computerName="GABRIEL" duration="00:00:00.0312763" startTime="2014-11-18T11:45:46.3113402-06:00" endTime="2014-11-18T11:45:46.8572596-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4f95c32d-5404-4a1b-a44b-88332c968f24">
+    </UnitTestResult>
+    <UnitTestResult executionId="98fe8134-7095-40db-bda5-a70f405a2b96" testId="090f0ebb-6a5c-6817-38ea-be75d3a0ef33" testName="PhotoTagDataAdapter_PhotoTag_ShouldReturnData" computerName="GABRIEL" duration="00:00:00.0012213" startTime="2014-11-18T11:45:46.8582362-06:00" endTime="2014-11-18T11:45:46.8631192-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98fe8134-7095-40db-bda5-a70f405a2b96">
+    </UnitTestResult>
+    <UnitTestResult executionId="ded16144-1e03-4df5-9b2b-3d7667b48d89" testId="5a4d297e-6e09-98a3-360d-90e5a86a6726" testName="PhotoTagDataAdapter_PhotoTag_ShouldUpdatePhotoTag" computerName="GABRIEL" duration="00:00:00.0009283" startTime="2014-11-18T11:45:46.8640958-06:00" endTime="2014-11-18T11:45:46.8689788-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ded16144-1e03-4df5-9b2b-3d7667b48d89">
+    </UnitTestResult>
+    <UnitTestResult executionId="2bc95e67-0e8e-4d8c-ae0a-a043f5ff8c2d" testId="8b920b89-0817-2a92-5670-313881374707" testName="PhotoSetDataAdapter_PhotoSet_ShouldReturnData" computerName="GABRIEL" duration="00:00:00.0014364" startTime="2014-11-18T11:45:46.8699554-06:00" endTime="2014-11-18T11:45:46.8738618-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bc95e67-0e8e-4d8c-ae0a-a043f5ff8c2d">
+    </UnitTestResult>
+    <UnitTestResult executionId="4d43761e-3b49-43c0-9a56-85741ec39579" testId="915f4dc9-b169-aca0-4c7f-9198c5a766a8" testName="PhotoSetDataAdapter_Photo_ShouldReturnData" computerName="GABRIEL" duration="00:00:00.0005799" startTime="2014-11-18T11:45:46.8748384-06:00" endTime="2014-11-18T11:45:46.8836278-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d43761e-3b49-43c0-9a56-85741ec39579">
+    </UnitTestResult>
+    <UnitTestResult executionId="ed35cc5d-0c69-46bc-9b02-761db51d0d71" testId="ee4c4d80-3f04-1173-03d1-08b6b2fc5494" testName="PhotoTagDataAdapter_PhotoTagSet_ShouldReturnData" computerName="GABRIEL" duration="00:00:00.0003388" startTime="2014-11-18T11:45:46.8836278-06:00" endTime="2014-11-18T11:45:46.8875342-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed35cc5d-0c69-46bc-9b02-761db51d0d71">
+    </UnitTestResult>
+  </Results>
+</TestRun>
