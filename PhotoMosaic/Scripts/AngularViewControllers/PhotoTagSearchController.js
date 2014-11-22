@@ -1,22 +1,29 @@
 ﻿myApp.controller("PhotoTagSearchController", function ($scope, $http, $window) {
 
-    $scope.PhotoTagSearchResults
+    $scope.PhotoTagSearchResults = [];
+    $scope.searchCriteriaString = "";
 
     $scope.QueryData = function () {
-        var request = $http({
-            method: "get",
-            url: "/api/photoset",
-            params: {
-                criteriaString: "",
-                pageIndex: 1,
-                pageSize: $scope.ClientViewData.ThumbCount,
-                authToken: "",
-                authDevice: ""
-            }
-        }).success(function (data) {
-            $scope.photoSetOriginal = data; // response data 
-            $scope.UpdateLayout();
-        });
+
+        if ($scope.searchCriteriaString.length > 3) {
+
+            var request = $http({
+                method: "get",
+                url: "/api/photoTagSet",
+                params: {
+                    criteriaString: $scope.searchCriteriaString,
+                    pageIndex: 1,
+                    pageSize: 10,
+                    authToken: "",
+                    authDevice: ""
+                }
+            }).success(function (data) {
+                $scope.PhotoTagSearchResults = data; // response data 
+            });
+
+        } else {
+            $scope.PhotoTagSearchResults = [];
+        }
     };
 
 

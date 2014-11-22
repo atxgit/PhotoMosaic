@@ -15,23 +15,46 @@
 
         
         <div ng-app="pmApp" ng-controller="PhotoSetController" id="pmContent" style="width:{{ClientViewData.ThumbLayoutSize.Width}}px">
-            
-            <form id="HeaderSearchForm" name="HeaderSearchForm" method="post" action="PhotoMosaic2.aspx" autocomplete="off">
-                <input name="h" type="hidden" id="h" value="457"><input name="w" type="hidden" id="w" value="1690">
+            <div>
+                <form ng-controller="PhotoTagSearchController" id="HeaderSearchForm" name="HeaderSearchForm"
+                xxxmethod="post" xxxaction="PhotoMosaic2.aspx" autocomplete="off">
                 <input id="HeaderSearchTextBox" name="HeaderSearchTextBox" type="text" maxlength="200">
-                <button id="HeaderSearchButton" value="submit" type="submit" class="header-search-button"></button>
-            </form>
-            <div id="HeaderSearchUsersDiv">
-                <ul>
-                    <li><div class="HSUDstart"></div><div>C H</div><div class="HSUDend"></div></li>
-                    <li><div class="HSUDstart"></div><div>D JS H</div><div class="HSUDend"></div></li>
-                    <li><div class="HSUDstart"></div><div>R H</div><div class="HSUDend"></div></li>
-                </ul>
+                <button id="HeaderSearchButton" value="submit" type="submit" class="header-search-button">
+                </button>
+                </form>
+                <div id="HeaderSearchUsersDiv">
+                    <ul>
+                        <li>
+                            <div class="HSUDstart">
+                            </div>
+                            <div>
+                                C H</div>
+                            <div class="HSUDend">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HSUDstart">
+                            </div>
+                            <div>
+                                D JS H</div>
+                            <div class="HSUDend">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="HSUDstart">
+                            </div>
+                            <div>
+                                R H</div>
+                            <div class="HSUDend">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="HeaderSearchResults">
+                    <ul xxid="HeaderSearchResultsUL">
+                    </ul>
+                </div>
             </div>
-            <div id="HeaderSearchResults">
-                <ul xxid="HeaderSearchResultsUL"></ul>
-            </div>
-
             <div id="pmImagelist">
                 <ul ng-repeat="group in photoSetGroups.Groups">
                     <li ng-repeat="photo in group.Photos" ng-class='{last:$last}' style="height:{{ClientViewData.ThumbSize.Height}}px; width:{{ClientViewData.ThumbSize.Width}}px">
