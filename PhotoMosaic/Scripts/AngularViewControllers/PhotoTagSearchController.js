@@ -3,13 +3,15 @@
     $scope.PhotoTagSearchResults = [];
     $scope.PhotoTagsCollection = [];
     $scope.searchCriteriaString = "";
-
-
+    
     $scope.PhotoTagSelected = function (index) {
         if (index >= 0 && index < $scope.PhotoTagSearchResults.PhotoTags.length) {
             var selectedTag = $scope.PhotoTagSearchResults.PhotoTags[index];
 
-            $scope.AddPhotoTag(selectedTag);            
+            $scope.AddPhotoTag(selectedTag);
+
+            $scope.searchCriteriaString = "";
+            $scope.PhotoTagSearchResults = [];
         }
     }
 
