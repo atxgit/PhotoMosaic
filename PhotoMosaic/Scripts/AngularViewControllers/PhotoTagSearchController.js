@@ -5,7 +5,7 @@
 
     $scope.QueryData = function () {
 
-        if ($scope.searchCriteriaString.length > 3) {
+        if ($scope.searchCriteriaString.length > 1) {
 
             var request = $http({
                 method: "get",

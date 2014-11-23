@@ -31,7 +31,9 @@ namespace PhotoMosaic.DataAccess
             {
                 set.PhotoTags.Add(new PhotoTagModel()
                         {
-                            Name = string.Format("Tag Name {0}", i)
+                            Id = i,
+                            Name = string.Format("{0} Smith {1}", criteria.SearchString, i),
+                            Type = "Person"
                         }
                     );
             }

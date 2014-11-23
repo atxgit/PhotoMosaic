@@ -249,12 +249,12 @@
             z-index: 2;
             -moz-border-radius: 3px;
             border-radius: 3px;
-            display: none;
+            xxxdisplay: none;
         }
         
         #HeaderSearchResults.active
         {
-            display: block;
+            xxxxdisplay: block;
         }
         
         #HeaderSearchResults ul
