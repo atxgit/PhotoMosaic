@@ -19,41 +19,24 @@
             <div ng-controller="PhotoTagSearchController" >
                 <form id="HeaderSearchForm" name="HeaderSearchForm"
                 xxxmethod="post" xxxaction="PhotoMosaic2.aspx" autocomplete="off">
-                <input id="HeaderSearchTextBox" name="HeaderSearchTextBox" type="text" maxlength="200" ng-model="searchCriteriaString" ng-change="QueryData()">
+                <input id="HeaderSearchTextBox" name="HeaderSearchTextBox" type="text" maxlength="200" ng-model="searchCriteriaString" ng-keyup="KeyUp($event)" >
                 <button id="HeaderSearchButton" value="submit" type="submit" class="header-search-button">
                 </button>
                 </form>
                 <div id="HeaderSearchUsersDiv">
                     <ul>
-                        <li>
+                        <li ng-repeat="tag in PhotoTagsCollection">
                             <div class="HSUDstart">
                             </div>
-                            <div>
-                                C H</div>
-                            <div class="HSUDend">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="HSUDstart">
-                            </div>
-                            <div>
-                                D JS H</div>
-                            <div class="HSUDend">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="HSUDstart">
-                            </div>
-                            <div>
-                                R H</div>
-                            <div class="HSUDend">
+                            <div>{{tag.Name}}</div>
+                            <div class="HSUDend" ng-click="DeletePhotoTag($index)" >
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div id="HeaderSearchResults" ng-show="PhotoTagSearchResults.PhotoTags.length">
                     <ul id="HeaderSearchResultsUL">
-                    <li ng-repeat="tag in PhotoTagSearchResults.PhotoTags">{{tag.Name}}</li>
+                    <li ng-repeat="tag in PhotoTagSearchResults.PhotoTags" ng-click="PhotoTagSelected($index)" >{{tag.Name}}</li>
                     </ul>
                 </div>
             </div>
